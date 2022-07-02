@@ -1,7 +1,9 @@
-# NEST-NEXT AGGREGATED EXAMPLE
+# Cafe-Coupon System
 
-This example demonstrates how to use nest-next to add server side rendering to [nest](https://github.com/nestjs/nest) with [next.js](https://github.com/zeit/next.js/).
+## 기능
+* 카페 쿠폰 관리자 페이지
+* 쿠폰 리스트
+* 쿠폰 등록 (1장)
+* 쿠폰 삭제 (1장 or 10장)
 
-All needed components are expected to be under one project, one repo, with this folder being the root of the repo.
-
-> You need to build the project first
+## 테스트 코드
