@@ -1,48 +1,7 @@
-## Description
+# NEST-NEXT AGGREGATED EXAMPLE
 
-카페 쿠폰 시스템 
-- 카페 사용자 등록
-- 카페 사용자 쿠폰 적립, 조회, 사용
-- 카페 관리자 쿠폰 관리
+This example demonstrates how to use nest-next to add server side rendering to [nest](https://github.com/nestjs/nest) with [next.js](https://github.com/zeit/next.js/).
 
-## Installation
+All needed components are expected to be under one project, one repo, with this folder being the root of the repo.
 
-```bash
-$ npm install
-```
-
-## Running the app
-
-```bash
-# development
-$ npm run start
-
-# watch mode
-$ npm run start:dev
-
-# production mode
-$ npm run start:prod
-```
-
-## Test
-
-```bash
-# unit tests
-$ npm run test
-
-# e2e tests
-$ npm run test:e2e
-
-# test coverage
-$ npm run test:cov
-```
-
-## Support
-
-## Stay in touch
-
-- Author - [Jong Min Shin](https://github.com/jm-shin)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+> You need to build the project first

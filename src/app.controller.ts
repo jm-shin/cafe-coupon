@@ -1,21 +1,16 @@
-import { Controller, Get, Render } from '@nestjs/common';
-import { AppService } from './app.service';
+import { Controller, Get, Query, Render } from '@nestjs/common';
 
 @Controller()
 export class AppController {
-  constructor(private readonly appService: AppService) {}
-
+  @Render('home')
   @Get()
-  @Render('Index')
-  public index() {
-    // initial props
-    return {
-      title: 'Next with Nest',
-    };
+  public index(@Query('name') name?: string) {
+    return { name };
   }
 
-  @Get('hello')
-  getHello(): string {
-    return this.appService.getHello();
+  @Render('about')
+  @Get('/about')
+  public about() {
+    return {};
   }
 }
