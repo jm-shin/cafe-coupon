@@ -4,6 +4,11 @@ import Next from 'next';
 import { AppController } from './app.controller';
 import { BlogController } from './blog/blog.controller';
 import { BlogService } from './blog/blog.service';
+import { LoginController } from './login/login.controller';
+import { LoginService } from './login/login.service';
+import { AuthController } from './auth/auth.controller';
+import { AuthService } from './auth/auth.service';
+import { DatabaseModule } from './database/database.module';
 
 @Module({
   imports: [
@@ -13,8 +18,9 @@ import { BlogService } from './blog/blog.service';
         conf: { useFilesystemPublicRoutes: false },
       }),
     ),
+    DatabaseModule,
   ],
-  controllers: [AppController, BlogController],
-  providers: [BlogService],
+  controllers: [AppController, BlogController, LoginController, AuthController],
+  providers: [BlogService, LoginService, AuthService],
 })
 export class AppModule {}
